@@ -1,0 +1,504 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Ruda&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: ruda;
+}
+
+.navigation {
+    /* border: 4px solid blue; */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    background-color: black;
+    color: white;
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.navigation>h3 {
+    font-size: 29px;
+    font-weight: 700;
+}
+
+/* menu--------------------------------------------------- */
+.nav-mid {
+    /* border: 1px solid yellow; */
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+}
+
+.nav-mid>a {
+    text-decoration: none;
+    color: white;
+}
+
+/* icons------------------------------------------------------ */
+.icons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 150px;
+}
+
+.icons>img {
+    /* border: 1px solid red; */
+    justify-content: space-between;
+    align-items: center;
+    /* color: white; */
+    width: 40px;
+    height: 40px;
+}
+
+/* body container---------------------------------------------- */
+.body-container {
+    background-image: url(./pizza11.jpg);
+    height: 100vh;
+    width: 100%;
+    /* border: 5px solid yellow; */
+}
+
+.body-container>h1 {
+    /* border: 3px solid green; */
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 60px 20px 20px 20px;
+    margin-left: 40px;
+    font-size: 80px;
+    font-weight: 500;
+    width: 40%;
+    font-family: Quattrocento;
+}
+
+.body-container>p {
+    /* border: 2px solid blue; */
+    color: white;
+    padding: 50px 0 0 0;
+    margin-left: 60px;
+    /* font-size: 70px; */
+    width: 30%;   
+    border-top: 8px solid #F24C4C;
+}
+
+.whole-container {
+    background-color: black;
+    color: white;
+}
+
+/* about section---------------------------------------------------- */
+h2 {
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-container {
+    /* border: 2px solid blue; */
+    display: flex;
+    padding-top: 20px;
+    /* justify-content: space-evenly; */
+}
+
+.about-container>.left-sec {
+    width: 50%;
+    border-top: 3px solid #F24C4C;
+    padding-top: 20px;
+    margin-left: 120px;
+    margin-top: 50px;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.about-container>.right-sec {
+    /* border: 2px solid blue; */
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 50px 20px 50px;
+}
+
+.right-sec>img {
+    /* border: 2px solid saddlebrown; */
+    height: 300px;
+    border-radius: 3px;
+}
+/*============================== ABOUT US UNDERLINE========================= */
+.about-us{
+    position: relative;
+    font-size: 60px;
+    font-family: Quattrocento;
+    font-weight: 400;
+}
+.about-us::after {
+    content: "";
+    position: absolute;
+    width: 20%;
+    height: 5px;
+    background-color: #B62828;
+    bottom: 0px; //to place it in bottom
+}
+
+/* <!-- menu heading & paragraph section --> */
+.menu {
+    /* border: 5px solid green; */
+    height: 50vh;
+    margin-top: 50px;
+}
+
+.para {
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 25px;
+}
+
+/* .menu>h2 {
+    font-size: 60px;
+    font-weight: 400;
+} */
+/*============================== MENU UNDERLINE========================= */
+.head2 {
+    position: relative;
+    font-family: Quattrocento;
+    font-size: 60px;
+    font-weight: 400;
+    padding: 20px;
+}
+
+.head2::after {
+    content: "";
+    position: absolute;
+    width: 20%;
+    height: 5px;
+    background-color: #B62828;
+    bottom: 20px; //to place it in bottom
+    left: 0;
+}
+
+
+
+/* ============================cards section============================== */
+.card-container1 {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding-top: 40px;
+}
+
+.card {
+    /* border: 2px solid teal; */
+    display: flex;
+    width: 450px;
+    padding: 15px;
+}
+
+.card-left>img {
+    /* border: 0.2px solid white; */
+    height: 150px;
+    width: 200px;
+    border-radius: 5px;
+}
+
+.card-right {
+    margin-left: 25px;
+}
+.card-right > span{
+    margin-top: -10px;
+}
+/* h4{
+    padding-bottom: 15px;
+} */
+
+/* =========================find us section====================== */
+
+.findus-container {
+    /* border: 2px solid blue; */
+    display: flex;
+    padding-top: 10px;
+    height: 80vh;
+}
+
+.findus-container>.left-sec {
+    width: 50%;
+    margin-top: 100px; 
+    margin-left: 120px;
+    font-size: 25px;
+    font-weight: 400;
+    padding-bottom: 20px;
+    height: 200px;
+}
+
+.findus-container>.right-sec {
+    /* border: 2px solid blue; */
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 50px 20px 50px;
+}
+
+.right-sec>img {
+    /* border: 2px solid saddlebrown; */
+    height: 300px;
+    border-radius: 3px;
+}
+.find-us{
+    position: relative;
+    font-size: 60px;
+    font-family: Quattrocento;
+    font-weight: 400;
+}
+.find-us::after {
+    content: "";
+    position: absolute;
+    width: 25%;
+    height: 5px;
+    background-color: #B62828;
+    bottom: 0px; //to place it in bottom
+}
+.location{
+    /* border: 1px solid yellow; */
+    margin-top: 30px;
+    padding: 10px;
+    display: flex;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    height: 40px;
+    gap: 30px;
+}
+.location > img{
+    height: 30px;
+    width: 30px;
+}
+.phone{
+    /* border: 1px solid yellow; */
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+    height: 40px;
+    gap: 30px;
+}
+.phone > img{
+    height: 30px;
+    width: 30px;
+}
+
+
+/* ============================footer============================ */
+.footer{
+    /* border: 5px solid green; */
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+.mail{
+    /* border: 1px solid rgb(255, 0, 34); */
+    display: flex;
+    padding: 25px;
+    gap: 30px;
+}
+.phone{
+    display: flex;
+    /* border: 1px solid crimson; */
+    padding: 25px;
+    gap: 30px;
+}
+.numbers{
+    display: flex;
+    flex-direction: column;
+}
+.mail-icon{
+    height: 30px;
+    width: 30px;
+}
+.phone-icon{
+    height: 30px;
+    width: 30px;
+}
+.footer > img{
+    border-radius: 50%;
+}
+
+
+/*========================= responsive section======================== */
+
+@media (max-width:1460px){
+    .container{
+        width: 100%;
+    }
+
+}
+@media (max-width:770px){
+    .body-container{
+        /* margin-left: 20px; */
+    }
+    .body-container >h1{
+        font-size: 50px;
+    }
+    .right-sec>img{
+        width: 300px;
+    }
+    .para{
+        padding: 10px;
+    }
+    .card-right{
+        padding: 25px;
+    }
+    .nav-mid{
+        width: 400px;
+        font-size: 15px;
+        gap: 5px;
+    }
+    .about-container > .left-sec {
+        width: 30%;
+        margin-top: 30px;
+        font-size: 14px;
+        font-weight: 100;
+        padding: 15px;
+    }
+    
+    .findus-container>.left-sec {
+        width: 50%;
+        height: 70vh;
+        /* border: 3px solid red; */
+        margin-top: auto;
+        margin-left: 100px;
+        font-size: 16px;
+        font-weight: 300;
+    }
+    .findus-container>.right-sec {
+        /* border: 2px solid blue; */
+        width: 40vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 30px;
+    }
+    .right-sec>img {
+        /* border: 2px solid saddlebrown; */
+        height: 300px;
+        width: 300px;
+        border-radius: 3px;
+    }
+}
+
+@media (max-width:430px){
+    .container{
+        width: 100%;
+    }
+    .nav-mid{
+        font-size: 12px;
+        padding: 15px;
+        gap: 5px;
+    }
+    .body-container>p{
+        font-size: 10px;
+    }
+    .head2{
+        font-size: 40px;
+    }
+    .head2::after{
+        width: 35%;
+    }
+    .find-us{
+        font-size: 30px;
+    }
+    .find-us::after{
+        width: 35%;
+    }
+    .card{
+        height: 30vh;
+       
+    }
+    .card-right{
+        display: flex;
+        flex-flow: row wrap;
+         padding: 10px;
+         font-size: 14px;
+    }
+    .about-us{
+        font-size: 40px;
+    }
+    .about-us::after {
+        width: 45%;
+    }
+    .about-container > .left-sec {
+        width: 70%;
+        margin-left: 10px;
+        margin-top: 30px;
+        font-size: 11px;
+        font-weight: 100;
+        padding-right: 35px;
+        border-top: 3px solid #F24C4C;
+    }
+    
+    .about-container>.right-sec {
+        width: 30vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 10px 20px 10px;
+    }
+
+    .para {
+        margin-left: 10%;
+        margin-right: 10%;
+        font-size: 18px;
+    }
+    .findus-container {
+        display: flex;
+        padding-top: 20px;
+        /* justify-content: space-evenly; */
+        height: 60vh;
+    }
+    .findus-container>.left-sec {
+        width: 50%;
+        /* border: 3px solid red; */
+        margin-left: 20px;
+        font-size: 14px;
+        font-weight: 200;
+        /* padding-bottom: 20px; */
+        display: flex;
+        /* flex-direction: column; */
+    }
+    .findus-container>.left-sec > p{
+        height: 40vh;
+        font-size: 11px;
+    }
+    .numbers{
+        width: 100px;
+        padding-right: 15px; */
+    }
+    .findus-container>.right-sec {
+        /* border: 2px solid blue; */
+        width: 50vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 50px 20px 20px;
+    }
+    .right-sec>img {
+        /* border: 2px solid saddlebrown; */
+        height: 150px;
+        width: 150px;
+        border-radius: 3px;
+        margin-right: 50px;
+    }
+    .footer{
+        /* border: 2px solid blue; */
+    }
+    .footer > img{
+        height: 150px;
+        width: 150px;
+    }
+}
